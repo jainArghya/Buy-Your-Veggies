@@ -1,0 +1,385 @@
+/* CSS styles */
+
+/* Home Page, Header & Footer */
+
+.intro{
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.5;
+    color: lightcoral;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.grid h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.grid p{
+    padding: 1.5rem 1rem 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.grid{
+    display: flex;
+    padding: 2rem 10rem;
+    margin: 1rem 2rem;
+}
+
+.img{
+    object-fit: cover; 
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    height: 500px; 
+    margin-bottom: 1rem; 
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.centered-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-button{
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: #198754;
+    text-align: center;
+    padding: 2% 5%;
+}
+  
+.social-links > * {
+    margin: 1rem;
+}
+
+.nav-btn{
+    width: 100px;
+}
+
+.profile-dropdown{
+    border-radius: 20px;
+}
+
+.SignUp{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Signup Page & Login Page */
+
+.login-page, .signup-page{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-height: 100vh;
+    background: url(bg-signup.jpg)no-repeat;
+    background-position: unset;
+    background-size: cover;
+    padding-left: 10rem;
+}
+
+.login-box, .signup-box{
+    position: relative;
+    width: 380px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(92, 236, 188);
+    border-radius: 15px;
+}
+
+.login-form, .signup-form{
+    text-align: center;
+}
+
+.login-box,.signup-box h3{
+    text-align: center;
+}
+
+.input-field{
+    position: relative;
+    margin: 25px 0;
+    width: 300px;
+    border-bottom: 2px solid white;
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label{
+    top: -5px;
+}
+
+.input-field input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 30px 0 5px;
+    color: rgb(15, 25, 144);
+}
+
+.input-field ion-icon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.login-btn, .signup-btn{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.auth-link{
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.auth-link a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover{
+    text-decoration: underline;
+}
+
+/* Products Pages */
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 5rem 10%;
+}
+
+.products-container > *{
+    max-width: 30%;
+    margin: 2rem 1rem;
+}
+
+.custom-card, .single-product p{
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.single-product a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.custom-card, .single-product button{
+    width: 100%;
+}
+
+.single-product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5rem 5% 8rem;
+}
+
+.product-image{
+    width: 50%;
+    padding: 1rem;
+}
+
+.product-image > img{
+    width: 100%;
+}
+
+.product-desc{
+    width: 50%;
+    padding: 1rem;
+}
+
+/* Cart Page */
+
+.cart-page h3{
+    margin: 0.5rem 1rem 1.5rem;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.continue-shopping{
+    background-color: white;
+    color: rgb(9, 23, 178);;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.my-cart{
+    display: flex;
+    align-items: flex-start;
+}
+
+.my-cart p{
+    padding: 0;
+    margin: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.cart-container{
+    width: 60%;
+}
+
+.cart-card{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 1px dashed green;
+}
+
+.cart-card img{
+    width: 40%;
+}
+
+.cart-card button{
+    width: 100%;
+}
+
+.cart-card-body{
+    margin: 0 1rem;
+}
+
+.order-summary{
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: 5rem auto;
+    padding: 0.5rem;
+}
+
+.order-summary button{
+    margin: 1rem 0 0.5rem;
+    width: 100%;
+}
+
+/* Customised Radio Buttons */
+
+.pack-sizes input[type="radio"]{
+	display: none;
+}
+
+.pack-sizes label{
+	position: relative;
+	color: #01cc65;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	border: 2px solid #01cc65;
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+    margin-bottom:4px;
+}
+
+.pack-sizes label:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 3px solid #01cc65;
+	margin-right: 20px;
+}
+
+.pack-sizes input[type="radio"]:checked + label{
+	background-color: #01cc65;
+	color: white;
+}
+
+.pack-sizes input[type="radio"]:checked + label:before{
+	content: "✔";
+	font-size: 20px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+/* Profile Page */
+
+.profile-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0 14rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container p{
+    font-size: 15px;
+    margin: 5px 0 0;
+}
+
+.profile-data{
+    width: 80%;
+    padding: 1rem 2rem;
+    margin: 0 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.139);
+}
+
+.update-password{
+    width: 400px;
+}
+
+.update-input{
+    width: 300px;
+    margin-bottom: 1rem;
+}
